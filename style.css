@@ -1,0 +1,61 @@
+/* Make the whole page take full height */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    /* Center everything */
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical center */
+
+    background-color: #f4f6f8;
+    font-family: Arial, sans-serif;
+}
+
+/* Form container styling */
+form {
+    display: flex;
+    flex-direction: column;   /* stack elements vertically */
+    align-items: center;      /* center all inputs horizontally */
+
+    gap: 12px;                /* spacing between elements */
+
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Labels styling */
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Input styling */
+input[type="number"],
+input[type="radio"] {
+    margin: 5px;
+}
+
+/* Group radio buttons nicely */
+.radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Optional: improve button style if added later */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
